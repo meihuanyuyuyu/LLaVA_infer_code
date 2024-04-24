@@ -1,7 +1,6 @@
 # student table:
 resolution: 640,282
-![student](data\Student.png)
-
+![student](./data/Student.png)
 
 
 qs: extract the student information with fields name, age, department and DOA from the table. Return the results in json format, only output the desired answer. Here are the example: {'student':[{'Name':'','Department':'','DOA':''}]}
@@ -25,15 +24,12 @@ out:
 
 # invoice-report:
 resolution:800x641
-Extract information of the Product ID 60 from the table. Return the answer in table form.
-
-| Product ID | Product Name | Quantity | Unit Price | Discount | Price |
-|------------|--------------|----------|------------|-----------|-------|
-| 60         | Camembert Pierrot | 40        | $2.00     | 0%       | $1,068.00 |
+![invoice](data/invoice-report.png)
 
 
+qs: extract the invoice objects with attributes name, quantity and price from the tables. Return the results in json format, only output the desired answer. Here are the example: {'invoice':[{'product name':'','quantity':'','price':''}]}
 
-extract the invoice objects with attributes name, quantity and price from the tables. Return the results in json format, only output the desired answer. Here are the example: {'invoice':[{'product name':'','quantity':'','price':''}]}
+out:
 ```json
 {
   "invoice": [
@@ -59,7 +55,8 @@ extract the invoice objects with attributes name, quantity and price from the ta
 
 
 # Invoice_sample_Construction_costs_displayed2.png
-resolution:
+resolution: 574x517
+![invoice2](./data/Invoice_sample_Construction_costs_displayed2.png)
 qs = "extract the invoice information with fields Stage, Fee and This Claim from the table. Return the results in json format, only output the desired answer. Here are the example: {'Tax':[{'Stage':'','Fee':'','This Claim':''}]}"
 
 ```json
@@ -93,8 +90,9 @@ qs = "extract the invoice information with fields Stage, Fee and This Claim from
 
 # invoice-table-reports
 resolution:900x300
+![invoice_table](./data/invoice-table-reports.jpg)
 
-"extract the invoice information with fields Category, balance due and average invoice from the table. Return the results in json format, only output the desired answer. Here are the example: {'invoice':[{'Category':'','Balance Due':'','Average Invoie':''}]}"
+qs = "extract the invoice information with fields Category, balance due and average invoice from the table. Return the results in json format, only output the desired answer. Here are the example: {'invoice':[{'Category':'','Balance Due':'','Average Invoie':''}]}"
 
 ```json
 {
@@ -134,10 +132,13 @@ resolution:900x300
 ```
 (wrong answer)
 
+
+
 # data/rebrand-intro-templates-invoice-tracking-template-page-table-1-2x.png
 resolution:1560X1100
+![template](./data/rebrand-intro-templates-invoice-tracking-template-page-table-1-2x.png)
 
-"extract the invoice information with fields Vendor Name, and its date from the table. Return the results in json format, only output the desired answer. Here are the example: {'invoice':[{'Vendor Name':'','Start date':''}]}"
+qs = "extract the invoice information with fields Vendor Name, and its date from the table. Return the results in json format, only output the desired answer. Here are the example: {'invoice':[{'Vendor Name':'','Start date':''}]}"
 
 ```json
 {
@@ -178,6 +179,10 @@ resolution:1560X1100
 }
 ```
 (correct answer)
+
+
+
+
 
 # vqa image (hgbl0037_9.png)
 
