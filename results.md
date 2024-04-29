@@ -133,6 +133,83 @@ qs = "extract the invoice information with fields Category, balance due and aver
 (wrong answer)
 
 
+# cost-table-flat.png
+![template](./data/cost-table-flat.png)
+A chat between a curious human and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the human's questions.###Human: <image>
+extract the value with fields SKU description and Unrounded Cost. Return the results in json format, only output the desired answer. the format like {'image':[{'SKU description':'','Unrounded Cost':''}]}###Assistant:
+[(1119, 750)]
+Sure, here's the JSON output with the fields SKU description and Unrounded Cost:
+
+```json
+{
+  "image": [
+    {
+      "SKU description": "My Project 16 Cloud Vision APP",
+      "Unrounded Cost": "1,354,910.00"
+    },
+    {
+      "SKU description": "My Project 16 Cloud TPU",
+      "Unrounded Cost": "1,354,910.00"
+    },
+    {
+      "SKU description": "My Project 16 Cloud B1G",
+      "Unrounded Cost": "1,354,910.00"
+    },
+    {
+      "SKU description": "My Project 16 Cloud B1G",
+      "Unrounded Cost": "1,354,910.00"
+    },
+    {
+      "SKU description": "My Project 16 Cloud B1G",
+      "Unrounded Cost": "1,354,910.00"
+    },
+    {
+      "SKU description": "My Project 16 Cloud B1G",
+      "Unrounded Cost": "1,354,910.00"
+    },
+    {
+      "SKU description": "My Project 16 Cloud B1G",
+      "Unrounded Cost": "1,354,910.00"
+    },
+  ]
+}
+```
+(wrong)
+
+
+# table wo clear lines
+![template](./data/image_Table wo clear lines.png)
+extract the invoice information with fields Stage, Fee and This Claim from the data. Return the results in json format, only output the desired answer. Here are the example: {'Tax':[{'Stage':'','Fee':'','This Claim':''}]}
+
+[(755, 938)]
+```json
+{
+  "Tax": [
+    {
+      "Rate": "12.12",
+      "Amount": "12.12T"
+    },
+    {
+      "Rate": "23",
+      "Amount": "23T"
+    },
+    {
+      "Rate": "43.99",
+      "Amount": "43.99T"
+    },
+    {
+      "Rate": "32",
+      "Amount": "32T"
+    },
+    {
+      "Rate": "24",
+      "Amount": "24T"}
+  ]
+}
+```
+(wrong order)
+
+
 
 # data/rebrand-intro-templates-invoice-tracking-template-page-table-1-2x.png
 resolution:1560X1100
